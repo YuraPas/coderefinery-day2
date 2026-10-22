@@ -8,8 +8,7 @@ def scale_amount(amount, base_servings, target_servings):
     if target_servings <= 0:
         raise ValueError("target servings must be positive")
 
-    return amount * target_servings / base_servings
-
+    return amount * base_servings / target_servings
 
 if __name__ == "__main__":
     flour = scale_amount(150, 2, 3)
